@@ -7,5 +7,5 @@ class TaskSchema(ma.SQLAlchemyAutoSchema):
         model = TaskModel
         include_fk = True
         dump_only = ("id",)
-        load_only = ("user",)
+        load_only = ("user", "user_id")
         load_instance = True
